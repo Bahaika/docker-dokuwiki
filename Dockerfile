@@ -13,4 +13,6 @@ RUN mkdir /run/apache2
 RUN chown apache:apache -R /run/apache2
 COPY ./httpd.conf /etc/apache2/httpd.conf
 
+VOLUME ["/srv/dokuwiki/conf", "/srv/dokuwiki/data"]
+
 CMD ["httpd", "-DFOREGROUND"]
