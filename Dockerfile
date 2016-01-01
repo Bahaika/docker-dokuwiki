@@ -5,7 +5,7 @@ WORKDIR /srv
 RUN wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
 RUN tar -xzf dokuwiki-stable.tgz
 RUN mv dokuwiki-2* /srv/dokuwiki
-RUN apk add --update apache2 php-apache2
+RUN apk add --update apache2 php-apache2 php-xml
 RUN rm -rf /var/cache/apk/*
 RUN chown apache:apache -R /srv/dokuwiki
 RUN mkdir /run/apache2
