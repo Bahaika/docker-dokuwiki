@@ -1,6 +1,6 @@
 ### Dokuwiki lighweight image
 
-![Dokuwiki logo](https://raw.githubusercontent.com/Bahaika/docker-dokuwiki/master/dokuwiki_logo.png)
+![Dokuwiki logo](https://raw.githubusercontent.com/HipsterWhale/docker-dokuwiki/master/dokuwiki_logo.png)
 
 #### Usage
 
