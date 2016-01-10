@@ -16,6 +16,8 @@ RUN chmod +x /entrypoint.sh
 
 VOLUME ["/srv/dokuwiki/conf", "/srv/dokuwiki/data"]
 
+EXPOSE 80
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["httpd", "-DFOREGROUND"]
