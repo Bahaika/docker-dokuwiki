@@ -1,5 +1,3 @@
-This is a fork of MechanicalSloth/docker-dokuwiki - it uses a newer Alpine & Dokuwiki image.
-
 ### Dokuwiki lighweight image
 
 ![Dokuwiki logo](https://raw.githubusercontent.com/HipsterWhale/docker-dokuwiki/master/dokuwiki_logo.png)
