@@ -1,11 +1,12 @@
-FROM alpine:3.3
+FROM alpine:3.6
 MAINTAINER Jérémy SEBAN <jeremy@seban.eu>
 
 WORKDIR /srv
-RUN wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
+RUN apk add --update openssl
+RUN wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
 RUN tar -xzf dokuwiki-stable.tgz
 RUN mv dokuwiki-2* /srv/dokuwiki
-RUN apk add --update apache2 php-apache2 php-xml
+RUN apk add --update apache2 php5-apache2 php5-xml
 RUN rm -rf /var/cache/apk/*
 RUN chown apache:apache -R /srv/dokuwiki
 RUN mkdir /run/apache2
